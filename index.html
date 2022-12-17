@@ -1,4 +1,4 @@
-<html lang="eu">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,36 +8,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>My Projects!!</title>
+    <title>Dev.Gustavo Maia</title>
 </head>
 
-<body class="bg-orange-400 font-bold">
+<body class="bg-orange-400 font-bold select-none">
     <header class="bg-gray-300 flex flex-col items-center p-4 rounded-b-md">
-        <img class="m-4 shadow-md" src="public/perfil.jpg" width="72px" height="72px" style="border-radius: 50%;" />
-        <span>My name is Gustavo Maia, I've been a dev for 5 years and I hope to help you with one of my projects</span>
+        <img class="m-4 shadow-md w-20 h-20 md:w-24 md:h-24" src="public/perfil.jpg" style="border-radius: 50%;" />
+        <span class="text-justify">Fazem 5 anos que me aventuro no mundo da programação,
+             espero poder ajuda-ló com alguns de meus projetos!</span>
+
+        <div class="relative w-full flex flex-col items-start justify-start md:items-center md:justify-center">
+            <a href="mailto:gustavohfmaia08@gmail.com">
+                <div class="bg-gray-400 p-1 rounded-md mt-2 flex flex-row justify-center items-center cursor-pointer
+            md:hover:scale-110">
+                    <img src="public/gmail.png" class="w-8 h-8" alt="Gmail icon" />
+                    <span>gustavohfmaia08@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=+5517996745399&text=Olá">
+                <div class="bg-gray-400 p-1 rounded-md mt-2 mb-2 flex flex-row justify-center items-center cursor-pointer
+                md:hover:scale-110">
+                    <img src="public/whatsapp.png" class="w-8 h-8" alt="Whastapp icon" />
+                    <span>+5517996745399</span>
+                </div>
+            </a>
+        </div>
     </header>
 
     <main class="flex flex-col items-center justify-center">
-        <section class="flex flex-col items-center justify-center m-10 md:w-2/6">
-            <div class="p-4 m-4 bg-gray-300 rounded-xl w-full">
-                project 1
-            </div>
-
-            <div class="p-4 m-4 bg-gray-300 rounded-xl w-full">
-                project 2
-            </div>
-
-            <div class="p-4 m-4 bg-gray-300 rounded-xl w-full">
-                project 3
-            </div>
+        <section id="sectionProjects" class="flex flex-col items-center justify-center m-10 w-full p-8 md:w-2/6">
         </section>
 
+        <section id="sectionInDev" class="flex flex-col items-center justify-center m-10 w-full p-8 md:w-2/6">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cmaqoazd.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+            <span class="text-gray-700 select-none">Em desenvolvimento !!!</span>
+        </section>
     </main>
 
-
-    <footer class="fixed bottom-0 p-4 text-white">
-        todos os direitos reservados email: gustavohfmaia08@gmail.com, contato: +55 17 99674-5399
-    </footer>
+    <script src="src/main.js"></script>
 </body>
 
 </html>
