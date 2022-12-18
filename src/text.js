@@ -42,11 +42,11 @@ const initText = function () {
     if (langSelect === KEY_GUSTA_MYPAGE_LANG_PT_BR) {
         spanTitle.innerHTML = texts.pt.title;
         spanAnimWorking.innerHTML = texts.pt.animWorking;
-        imgLang.src = "/public/brasil.png";
+        imgLang.src = "public/brasil.png";
     } else {
         spanTitle.innerHTML = texts.en.title;
         spanAnimWorking.innerHTML = texts.en.animWorking;
-        imgLang.src = "/public/eua.png";
+        imgLang.src = "public/eua.png";
     }
 }
 
