@@ -5,13 +5,11 @@ const KEY_GUSTA_MYPAGE_LANG_EN = "KEY_GUSTA_MYPAGE_LANG_EN";
 const texts = {
     pt: {
         title: `Fazem 5 anos que me aventuro no mundo da programação,
-        espero poder ajuda-ló com alguns de meus projetos!`,
-        animWorking: "Em desenvolvimento !!!"
+        espero poder ajuda-ló com alguns de meus projetos!`
     },
     en: {
         title: `It's been 5 years since I ventured into the world of programming,
-        I hope I can help you with some of my projects!`,
-        animWorking: "in development !!!"
+        I hope I can help you with some of my projects!`
     }
 };
 
@@ -36,18 +34,14 @@ const initText = function () {
     langSelect = localStorage.getItem(KEY_GUSTA_MYPAGE_LANG);
 
     const spanTitle = document.getElementById("spanTitle");
-    const spanAnimWorking = document.getElementById("spanAnimWorking");
     const spanLang = document.getElementById("spanLang");
 
     if (langSelect === KEY_GUSTA_MYPAGE_LANG_PT_BR) {
         spanTitle.innerHTML = texts.pt.title;
-        spanAnimWorking.innerHTML = texts.pt.animWorking;
         spanLang.innerHTML = "br";
     } else {
         spanTitle.innerHTML = texts.en.title;
-        spanAnimWorking.innerHTML = texts.en.animWorking;
         spanLang.innerHTML = "en";
-
     }
 }
 

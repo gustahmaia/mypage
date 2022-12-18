@@ -11,14 +11,14 @@
     <title>Dev.Gustavo Maia</title>
 </head>
 
-<body class="bg-orange-400 font-bold select-none">
-    <header class="bg-gray-300 flex flex-col items-center p-4 rounded-b-md">
+<body id="body" class="font-bold select-none outline-none">
+    <header id="header" class="flex flex-col items-center p-4 rounded-b-md ">
         <img class="m-4 shadow-md w-20 h-20 md:w-24 md:h-24" src="public/perfil.jpg" style="border-radius: 50%;" />
         <span id="spanTitle" class="text-justify"></span>
 
         <div class="relative w-full flex flex-col items-start justify-start md:items-center md:justify-center">
             <a href="mailto:gustavohfmaia08@gmail.com">
-                <div class="bg-gray-400 p-1 rounded-md mt-2 flex flex-row justify-center items-center cursor-pointer
+                <div id="compEmail" class="p-1 rounded-md mt-2 flex flex-row justify-center items-center cursor-pointer
             md:hover:scale-110">
                     <img src="public/gmail.png" class="w-8 h-8" alt="Gmail icon" />
                     <span>gustavohfmaia08@gmail.com</span>
@@ -26,7 +26,7 @@
             </a>
 
             <a href="https://api.whatsapp.com/send?phone=+5517996745399&text=Olá">
-                <div class="bg-gray-400 p-1 rounded-md mt-2 mb-2 flex flex-row justify-center items-center cursor-pointer
+                <div id="compWhatsapp" class="p-1 rounded-md mt-2 mb-2 flex flex-row justify-center items-center cursor-pointer
                 md:hover:scale-110">
                     <img src="public/whatsapp.png" class="w-8 h-8" alt="Whastapp icon" />
                     <span>+5517996745399</span>
@@ -34,9 +34,15 @@
             </a>
         </div>
 
-        <div class="absolute right-0 mr-4 bg-orange-400 p-1
-        cursor-pointer md:hover:scale-110 flex justify-center rounded-md">
-            <span id="spanLang" onclick="clickLang()"></span>
+        <div class="absolute right-0 mr-4  ">
+            <div id="compLang"
+                class="p-1 rounded-md shadow-md cursor-pointer md:hover:scale-110 min-w-10 w-10 flex justify-center">
+                <span id="spanLang" onclick="clickLang()"></span>
+            </div>
+            <div id="compTheme"
+                class="mt-4 p-1 rounded-md shadow-md cursor-pointer md:hover:scale-110 min-w-10 w-10 flex justify-center">
+                <img class="w-6 h-6" id="imgTheme" onclick="clickTheme()">
+            </div>
         </div>
 
     </header>
@@ -48,13 +54,12 @@
         <section id="sectionInDev" class="flex flex-col items-center justify-center m-10 w-full p-8 md:w-2/6">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cmaqoazd.json" background="transparent"
-                speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-
-            <span id="spanAnimWorking" class="text-gray-700 select-none"></span>
+                class="w-9/12 h-9/12" speed="1" loop autoplay></lottie-player>
         </section>
     </main>
 
     <script src="src/text.js"></script>
+    <script src="src/theme.js"></script>
     <script src="src/main.js"></script>
 </body>
 
