@@ -14,8 +14,7 @@
 <body class="bg-orange-400 font-bold select-none">
     <header class="bg-gray-300 flex flex-col items-center p-4 rounded-b-md">
         <img class="m-4 shadow-md w-20 h-20 md:w-24 md:h-24" src="public/perfil.jpg" style="border-radius: 50%;" />
-        <span class="text-justify">Fazem 5 anos que me aventuro no mundo da programação,
-             espero poder ajuda-ló com alguns de meus projetos!</span>
+        <span id="spanTitle" class="text-justify"></span>
 
         <div class="relative w-full flex flex-col items-start justify-start md:items-center md:justify-center">
             <a href="mailto:gustavohfmaia08@gmail.com">
@@ -34,6 +33,9 @@
                 </div>
             </a>
         </div>
+
+        <img id="imgLang" src="/public/brasil.png" alt="Img language"
+        class="w-8 h-8 absolute right-0 mr-4 cursor-pointer md:hover:scale-110" />
     </header>
 
     <main class="flex flex-col items-center justify-center">
@@ -45,11 +47,12 @@
             <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cmaqoazd.json" background="transparent"
                 speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 
-            <span class="text-gray-700 select-none">Em desenvolvimento !!!</span>
+            <span id="spanAnimWorking" class="text-gray-700 select-none"></span>
         </section>
     </main>
 
     <script src="src/main.js"></script>
+    <script src="src/text.js"></script>
 </body>
 
 </html>

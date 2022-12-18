@@ -1,21 +1,31 @@
-const projects = [];
+var projects = undefined;
 
-const Project = { title: "" };
+class Project {
+    constructor(title) {
+        this.title = title;
+    }
+}
 
 const addProject = function (project) {
-    const div = `<div class="p-4 m-4 bg-gray-300 rounded-xl w-full cursor-pointer select-none">
+    const div = `<div class="p-4 m-4 bg-gray-300 rounded-xl w-full cursor-pointer select-none md:hover:scale-110">
                     ${project.title}
                 </div>`;
 
-    projects.push(div);
+    if (!projects) {
+        projects = "";
+    }
+
+    projects = projects + div;
+
+    const sectionProjects = document.getElementById("sectionProjects");
+    sectionProjects.innerHTML = projects;
 }
 
 const init = function () {
-
     const sectionProjects = document.getElementById("sectionProjects");
     const sectionInDev = document.getElementById("sectionInDev");
 
-    if (projects && projects.length > 0) {
+    if (projects) {
         sectionProjects.style.display = "flex";
         sectionInDev.style.display = "none";
     } else {
