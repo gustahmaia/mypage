@@ -37,16 +37,17 @@ const initText = function () {
 
     const spanTitle = document.getElementById("spanTitle");
     const spanAnimWorking = document.getElementById("spanAnimWorking");
-    const imgLang = document.getElementById("imgLang");
+    const spanLang = document.getElementById("spanLang");
 
     if (langSelect === KEY_GUSTA_MYPAGE_LANG_PT_BR) {
         spanTitle.innerHTML = texts.pt.title;
         spanAnimWorking.innerHTML = texts.pt.animWorking;
-        imgLang.src = "public/brasil-ico.png";
+        spanLang.innerHTML = "br";
     } else {
         spanTitle.innerHTML = texts.en.title;
         spanAnimWorking.innerHTML = texts.en.animWorking;
-        imgLang.src = "public/eua-ico.png";
+        spanLang.innerHTML = "en";
+
     }
 }
 
